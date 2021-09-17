@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけん</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/drow_style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="vs_box">
+        <!-- <div class="left_box">結果</div> -->
+        <div class="video_box">
+          <!-- <video src="mov/アンパンチ.mov" autoplay muted controls></video> -->
+
+          <div class="video">
+            <!-- <video src="mov/アンパンチ.mov" autoplay muted controls></video> -->
+            <video
+              id="mov1"
+              src="mov/アンパンマン叫び.mov"
+              muted
+              autoplay
+              controls
+            ></video>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="right_box">結果</div> -->
+      <!-- </div> -->
+      <div class="janken_box">
+        <div class="baikin"><img src="img/baikinman.png" alt=""></div>
+        <div class="gu_box">
+          <!-- <img src="img/gu_nega.png" class="gu_img01" alt="" /> -->
+          <img id="gu_btn" src="img/choki.png" class="gu_img02" alt="" />
+        </div>
+        <div class="txt_box">
+          <a href="janken.html"><span class="vs_txt">あいこ</span><span class="hover_txt">もういっかい</span>
+          </a>
+          <!-- <h1 class="vs_txt">あいこ</h1> -->
+          <!-- <img src="img/choki_nega.png" class="choki_img01" alt="" /> -->
+          <!-- <img id="choki_btn" src="img/choki.png" class="choki_img02" alt="" /> -->
+        </div>
+        <div class="pa_box">
+          <!-- <img src="img/pa_nega.png" class="pa_img01" alt="" /> -->
+          <img id="pa_btn" src="img/choki.png" class="pa_img02" alt="" />
+        </div>
+        <div class="anpan"><img src="img/anpanman.png" alt=""></div>
+      </div>
+    </div>
+
+    <!-- jquery設定 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- js処理記載 -->
+    <script type="text/javascript">
+      var vid = document.getElementById("mov1");
+      // vid.playbackRate = 2.0;
+      vid.playbackRate = 1;
+    </script>
+    <script></script>
+  </body>
+</html>

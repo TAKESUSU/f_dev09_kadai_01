@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけん</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/chenge_style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="vs_box">
+        <div class="video_box">
+
+          <div class="video">
+            <video
+              id="mov1"
+              src="mov/新しい顔.mov"
+              muted
+              autoplay
+              controls
+            ></video>
+          </div>
+      <div class="janken_box">
+        <!-- <div class="baikin"><img src="img/baikinman.png" alt=""></div>
+        <div class="gu_box">
+          <img id="gu_btn" src="img/gu.png" class="gu_img02" alt="" />
+        </div> -->
+        <div class="txt_box">
+          <a href="janken.html"><h1 class="vs_txt">もういっかい</h1></a>
+        </div>
+        <!-- <div class="pa_box">
+          <img id="pa_btn" src="img/pa.png" class="pa_img02" alt="" />
+        </div>
+        <div class="anpan"><img src="img/anpanman.png" alt=""></div> -->
+      </div>
+    </div>
+
+    <!-- jquery設定 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- js処理記載 -->
+    <script type="text/javascript">
+      var vid = document.getElementById("mov1");
+      // vid.playbackRate = 2.0;
+      vid.playbackRate = 1;
+    </script>
+    <script></script>
+  </body>
+</html>
